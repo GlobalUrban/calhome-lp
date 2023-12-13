@@ -1,0 +1,40 @@
+@use "../../globals/" as *;
+
+.example-card__container {
+    @include flex-center();
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    div {
+        width: 100%;
+        max-width: 1100px;
+        padding: 20px 20px;
+        display: flex;
+
+        gap: 15px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1150px) {
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .example-card {
+            padding: 10px 20px;
+            width: 300px;
+            border: solid 2px $orange;
+            border-radius: 18px;
+            @include flex-center();
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .--example-card-bigger {
+            width: 660px;
+        }
+
+    }
+
+}
