@@ -84,29 +84,7 @@
 
 }
 
-.home-img-1 {
-    display: none;
 
-    @media screen and (max-width: 850px) {
-        display: none;
-    }
-
-    @media screen and (min-height: 900px) {
-        display: block;
-    }
-}
-
-.home-img-1_2 {
-    display: block;
-
-    @media screen and (min-height: 900px) {
-        display: none;
-    }
-
-    @media screen and (max-width: 850px) {
-        display: none;
-    }
-}
 
 .home-img-2 {
     display: none;
