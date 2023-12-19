@@ -52,25 +52,9 @@ main {
         position: absolute;
         bottom: 3%;
         background: none;
-        width: 97%;
+        width: 95%;
         display: flex;
         justify-content: space-between;
-
-        @media screen and (max-width: 1050px) {
-            img {
-                width: 100px;
-                height: 100px;
-                object-fit: contain;
-            }
-
-            .lp-logo {
-                width: 150px;
-                height: 100px;
-                object-fit: contain;
-
-            }
-        }
-
 
         @media screen and (max-width: 850px) {
             display: none;
@@ -78,19 +62,19 @@ main {
 
 
         img {
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             object-fit: contain;
         }
 
         .lp-logo {
-            width: 180px;
-            height: 120px;
+            width: 200px;
+            height: 140px;
             object-fit: contain;
 
         }
 
-        @media screen and (max-width: 1050px) {
+        @media screen and (max-width: 1150px) {
             img {
                 width: 100px;
                 height: 100px;
@@ -155,6 +139,15 @@ main {
 section {
     padding: 20px 20px;
 
+    @media screen and (max-width: 568px) {
+        padding-bottom: 0px;
+    }
+
+}
+
+.--section {
+    padding: 0px 20px;
+    margin-bottom: 20px;
 }
 
 .two-side {
@@ -178,8 +171,6 @@ section {
 
         @media screen and (max-width: 568px) {
             width: 100%;
-
-
         }
 
         ul {
@@ -188,7 +179,13 @@ section {
             gap: 10px;
 
 
+            @media screen and (max-width: 568px) {
+                margin: 0;
+            }
+
         }
+
+
 
         .ul-different {
             margin-top: 5px;
